@@ -67,3 +67,21 @@ th{
     font-family: 'Golos Text', sans-serif;
     color:darkred;
 }
+.corgiList {
+    background-color:rgb(241, 162, 71);
+    font-family: 'Golos Text', sans-serif;
+    color:darkred;
+}
+.lovelyCorgi {
+    border-style: groove;
+    border-color: orange;
+    border-width: 3px;
+    border-radius: 10%;
+}
+
+.lovelyCorgiOne {
+    border-style: groove;
+    border-color: orange;
+    border-width: 3px;
+    border-radius: 10%;
+}
