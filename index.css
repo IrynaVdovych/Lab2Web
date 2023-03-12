@@ -7,9 +7,13 @@
     background-color:rgba(224, 158, 36, 0.507);
 }
 h1 {
+    margin: 0%;
+    margin-bottom:4%;
     font-family:  'Bungee Spice', cursive;
     font-size: 6rem;
     text-align: center;
+    transform: scale(1.1);
+    background-image: linear-gradient(to bottom, #cc4922, #ecb46a);
 }
 
  .heart-shape {
@@ -36,8 +40,12 @@ h1 {
     transform-origin: 100% 100%;
     }
 p {
+    margin: 4%;
+    border-radius: 3%;
     font-family: 'Golos Text', sans-serif;
     color:darkred;
+    box-shadow: 10px 15px 25px rgba(248, 59, 12, 0.884);
+    transform: translateY(-5px);
 }
 .vaccination {
     font-family: 'Golos Text', sans-serif;
@@ -72,16 +80,42 @@ th{
     font-family: 'Golos Text', sans-serif;
     color:darkred;
 }
-.lovelyCorgi {
+.lovelyCorgi, .lovelyCorgiTwo {
+    
+    margin: 7%;
     border-style: groove;
     border-color: orange;
     border-width: 3px;
     border-radius: 10%;
+    transform: rotate(15deg);
 }
 
 .lovelyCorgiOne {
+    margin: 3%;
     border-style: groove;
     border-color: orange;
     border-width: 3px;
     border-radius: 10%;
+    transform: rotate(-15deg);
 }
+.ulcorgi {
+    margin-bottom: 3%;
+}
+
+.animation{
+    margin-left: -8%;
+    margin-right: -8%;
+    margin-bottom: -5%;
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(126, 60, 21);
+    font-family: 'Golos Text', sans-serif;
+    height: 100px;
+    background: linear-gradient(45deg, rgb(221, 65, 18), rgb(250, 164, 34), rgb(245, 206, 123));
+    background-size: 400% 400%;
+    transition: background-position 1s ease;
+  }
+  
+  .animation:hover {
+    background-position: 100% 100%;
+  }
