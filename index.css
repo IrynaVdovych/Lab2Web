@@ -3,85 +3,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
 :root {
-    background-color:rgba(224, 158, 36, 0.507);
+    background-color: rgba(224, 158, 36, 0.507);
 }
+
 h1 {
     margin: 0%;
-    margin-bottom:4%;
-    font-family:  'Bungee Spice', cursive;
+    margin-bottom: 4%;
+    font-family: 'Bungee Spice', cursive;
     font-size: 6rem;
     text-align: center;
     transform: scale(1.1);
     background-image: linear-gradient(to bottom, #cc4922, #ecb46a);
 }
 
- .heart-shape {
-    position: relative;
-    width: 100px; 
-    height: 80px;
+@keyframes moveDown {
+    from {
+        transform: translateY(0);
     }
-    .heart-shape:before, 
-    .heart-shape:after {
-    content: "";
-    position: absolute; 
-    left: 50px; 
+
+    to {
+        transform: translateY(50px);
+    }
+}
+
+.heart-shape {
+    position: absolute;
     top: 0;
-    width: 50px; 
+    left: 0;
+    width: 50px;
+    height: 50px;
+
+    position: relative;
+    width: 100px;
+    height: 80px;
+}
+
+.heart-shape:before,
+.heart-shape:after {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 50px;
     height: 80px;
     background: #df3910;
     border-radius: 50px 50px 0 0;
-    transform: rotate(-45deg); 
+    transform: rotate(-45deg);
     transform-origin: 0 100%;
-    }
-    .heart-shape:after {
+}
+
+.heart-shape:after {
     left: 0;
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
     transform-origin: 100% 100%;
-    }
+}
+
 p {
     margin: 4%;
     border-radius: 3%;
     font-family: 'Golos Text', sans-serif;
-    color:darkred;
+    color: darkred;
     box-shadow: 10px 15px 25px rgba(248, 59, 12, 0.884);
     transform: translateY(-5px);
 }
+
 .vaccination {
+    margin: auto;
+    margin-bottom: 2%;
+    align-items: center;
     font-family: 'Golos Text', sans-serif;
-    color:darkred;
+    color: darkred;
     border-color: chocolate;
     background-color: rgb(245, 210, 167);
 }
+
 .vaccinationH {
+    font-size: 35px;
+    text-align: center;
     font-family: 'Golos Text', sans-serif;
-    color:darkred;
+    color: darkred;
     font-weight: bold;
+    animation: moveDown 3s ease infinite;
 }
 
-td{
-    background-color:rgb(255, 177, 87);
+td {
+    background-color: rgb(255, 177, 87);
 }
-th{
-    background-color:rgb(241, 162, 71);
+
+th {
+    background-color: rgb(241, 162, 71);
 }
+
 .discount {
     text-decoration: line-through;
     font-family: 'Golos Text', sans-serif;
-    color:darkred;
+    color: darkred;
+    text-align: center;
 }
 
 .breed {
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: 35px;
     font-family: 'Golos Text', sans-serif;
-    color:darkred;
+    color: darkred;
+    animation: moveDown 3s ease infinite;
 }
+
 .corgiList {
-    background-color:rgb(241, 162, 71);
+    background-color: rgb(241, 162, 71);
     font-family: 'Golos Text', sans-serif;
-    color:darkred;
+    color: darkred;
 }
-.lovelyCorgi, .lovelyCorgiTwo {
-    
+
+.lovelyCorgi,
+.lovelyCorgiTwo {
+
     margin: 7%;
     border-style: groove;
     border-color: orange;
@@ -98,24 +137,38 @@ th{
     border-radius: 10%;
     transform: rotate(-15deg);
 }
-.ulcorgi {
-    margin-bottom: 3%;
-}
 
-.animation{
+
+
+.animation {
     margin-left: -8%;
     margin-right: -8%;
     margin-bottom: -5%;
     text-align: center;
     font-size: 2rem;
-    color:rgb(126, 60, 21);
+    color: rgb(126, 60, 21);
     font-family: 'Golos Text', sans-serif;
     height: 100px;
     background: linear-gradient(45deg, rgb(221, 65, 18), rgb(250, 164, 34), rgb(245, 206, 123));
     background-size: 400% 400%;
     transition: background-position 1s ease;
+}
+
+.animation:hover {
+    background-position: 100% 100%;
+}
+
+.quote {
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* розтягувати на висоту батька */
   }
   
-  .animation:hover {
-    background-position: 100% 100%;
+  .ulcorgi {
+    flex-grow: 100; /* розтягуватись на залишок вільного простору */
   }
