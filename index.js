@@ -1,4 +1,4 @@
-//LAB WORK 3
+//!LABORATORY WORK 3!
 //TASK 1
 alert("Колірна роздільна здатність екрану: " + screen.colorDepth + " біт на піксель.");
 //TASK 2
@@ -8,32 +8,105 @@ function sayHello() {
 
     // Перевірити, чи користувач ввів ім'я
     if (name != null && name != "") {
-      // Показати повідомлення з привітанням
-      alert("The dog's name is " + name + "!");
-      
-      // Занести введене ім'я у текст абзацу
-      document.getElementById("student").textContent = name;
-    }
-  }
-    //TASK 3
-    function redirectToGoogle() {
-      // відкриваємо діалогове вікно з запитанням про перехід на сторінку Google
-      var result = confirm("Open Gorgi Wiki?");
+        // Показати повідомлення з привітанням
+        alert("The dog's name is " + name + "!");
 
-      if (result) {
+        // Занести введене ім'я у текст абзацу
+        document.getElementById("student").textContent = name;
+    }
+}
+//TASK 3
+function redirectToGoogle() {
+    // відкриваємо діалогове вікно з запитанням про перехід на сторінку Google
+    var result = confirm("Open Gorgi Wiki?");
+
+    if (result) {
         // якщо користувач натиснув на кнопку ОК, то переходимо на сторінку Google
         window.location.href = "https://en.wikipedia.org/wiki/Welsh_Corgi";
-      } else {
+    } else {
         // якщо користувач натиснув на кнопку Cancel, то виводимо повідомлення і залишаємося на поточній сторінці
         alert("Request was denied");
-      }
     }
-    //TASK 4
+}
+//TASK 4
 let newWindow; //оголошуємо змінну
-function firstFunction(){ 
- newWindow = window.open("https://www.akc.org/expert-advice/health/puppy-shots-complete-guide/", "_blank");
+function firstFunction() {
+    newWindow = window.open("https://www.akc.org/expert-advice/health/puppy-shots-complete-guide/", "_blank");
 }
-function secondFunction(){
- newWindow.close();
+function secondFunction() {
+    newWindow.close();
 }
-//LAB WORK 4
+
+
+
+
+
+//!LABORATOTY WORK 4!
+//TASK 11
+window.onload = function () { // Відкриваємо нове вікно після завантаження сторінки
+    setTimeout(function () { //Щоб відкрити нове вікно через 3 секунди після завантаження сторінки
+        var newWindow = window.open('', '', 'width=300,height=600');
+        newWindow.document.write('The window is opened.');
+
+        // Змінюємо напис через 3 секунди після відкривання вікна
+        setTimeout(function () {
+            newWindow.document.body.innerHTML = '3 seconds have lasted';
+        }, 3000);
+    }, 3000);
+};
+
+//TASK 5
+function showWindow() { // Обробник події для кнопки
+    // Затримка для відображення вікна після натискання на кнопку
+    setTimeout(function () {
+        var input = document.getElementById("myInput");
+        var text = input.value;
+        alert(text);
+        // Очистка рядка вводу
+        input.value = "";
+    }, 3000);
+}
+
+//TASK 17
+const counter = document.getElementById("counter"); // отримуємо доступ до елементів DOM за їх айді
+const btn = document.getElementById("btn");
+//змінну зберігає поточне значення лічильника
+let count = 0;
+// функція, що буде виконуватись при кожному кліку на кнопку
+function increment() {
+    count++; // збільшуємо значення на 1
+    counter.innerText = count; // оновлюємо вміст абзацу з новим значенням
+}
+// додаємо обробник події "click" до кнопки
+btn.addEventListener("click", increment);
+
+
+//TASK 3 
+// Отримуємо елемент <img> зі сторінки
+const image = document.querySelector('img');
+
+// Створюємо масив з URL-адресами картинок
+const imageUrls = [
+  'lovelyCorgi.jpg',
+  'lovelyCorgiOne.jpg',
+  'lovelyCorgiTwo.jpg'
+];
+
+let index = 0; // Початковий індекс для масиву URL-адресів картинок
+
+setInterval(() => {
+  index = (index + 1) % imageUrls.length; // Обчислюємо індекс наступної картинки
+  const nextImageUrl = imageUrls[index];
+  
+  // Створюємо новий об'єкт Image для наступної картинки
+  const nextImage = new Image();
+  nextImage.src = nextImageUrl;
+  nextImage.onload = () => {
+    // Анімація зміни картинки
+    image.style.opacity = 2;
+    setTimeout(() => {
+      image.src = nextImageUrl;
+      image.style.opacity = 2;
+    }, 2000); // Тривалість анімації: 1 секунда
+  };
+}, 2000); // Зміна картинки кожні 2 секунди

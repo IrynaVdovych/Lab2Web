@@ -196,3 +196,29 @@ th {
 .corgii {
     margin-bottom: 3%;
 }
+.labFourthFive {
+    margin-top: 10%;
+    color: rgb(126, 60, 21);
+    font-family: 'Golos Text', sans-serif;
+}
+.labFourthFiveBut {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.labFourthSeventeen {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.labFourthSeventeenBut {
+    background-color: rgb(209, 101, 38);
+    font-family: 'Golos Text', sans-serif;
+}
+.ptaskFourth {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    margin-top: 7%;
+    padding-left: 7%;
+    font-size: 210%;
+}
