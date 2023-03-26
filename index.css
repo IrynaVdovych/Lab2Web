@@ -27,6 +27,14 @@ h1 {
         transform: translateY(50px);
     }
 }
+.breed {
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: 35px;
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    animation: moveDown 3s ease infinite;
+}
 
 .heart-shape {
     position: absolute;
@@ -60,7 +68,7 @@ h1 {
     transform-origin: 100% 100%;
 }
 
-p {
+.quoteanimation {
     margin: 4%;
     border-radius: 3%;
     font-family: 'Golos Text', sans-serif;
@@ -103,15 +111,6 @@ th {
     text-align: center;
 }
 
-.breed {
-    text-align: center;
-    margin-bottom: 6%;
-    font-size: 35px;
-    font-family: 'Golos Text', sans-serif;
-    color: darkred;
-    animation: moveDown 3s ease infinite;
-}
-
 .corgiList {
     background-color: rgb(241, 162, 71);
     font-family: 'Golos Text', sans-serif;
@@ -134,7 +133,7 @@ th {
     border-style: groove;
     border-color: orange;
     border-width: 3px;
-    border-radius: 10%;
+    border-radius: 10px;
     transform: rotate(-15deg);
 }
 
@@ -166,9 +165,34 @@ th {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%; /* розтягувати на висоту батька */
+    height: 30%; /* розтягувати на висоту батька */
+    justify-content:start;
   }
   
   .ulcorgi {
     flex-grow: 100; /* розтягуватись на залишок вільного простору */
   }
+  .corgiList {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 40px;
+}
+.buttons {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+    margin-bottom: 2%;
+}
+.labthree {
+    margin-top: 3%;
+}
+.dogg {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.labthreeNext {
+    margin-top: 5%;
+}
+.corgii {
+    margin-bottom: 3%;
+}

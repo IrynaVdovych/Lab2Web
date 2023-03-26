@@ -10,26 +10,38 @@
 </head>
 
 <body>
-
-  <h1>CHOOSE YOUR CORGI</h1>
-  <ul class="ulcorgi container">
-    <nav>
-      <li><a class="loving" href="#breeds">Corgi breeds</a></li>
-      <li><a class="loving" href="#Vaccinationcalendar">Vaccination calendar</a></li>
-    </nav>
-  </ul>
+  <div class="container">
+    <h1>CHOOSE YOUR CORGI</h1>
+    <ul class="ulcorgi ">
+      <nav>
+        <li><a class="loving" href="#breeds">Corgi breeds</a></li>
+        <li><a class="loving" href="#Vaccinationcalendar">Vaccination calendar</a></li>
+      </nav>
+    </ul>
+  </div>
   <h2 class="vaccinationH" id="breeds">CORGI BREEDS</h2>
   <img class="lovelyCorgi" src="lovelyCorgi.jpg" width="250px" ; height="250px">
   <img class="lovelyCorgiOne" src="lovelyCorgiOne.jpg" width="250px" ; height="250px">
   <img class="lovelyCorgiTwo" src="lovelyCorgiTwo.jpg" width="250px" ; height="250px">
   <p></p>
+  <h3 class="labthreeNext"></h3>
+      <button class="buttons corgii" onclick="redirectToGoogle()">Open Corgi Wiki</button>
+      <p></p>
   <select class="corgiList" name="user_profile_color_2" required="required">
-    <option value="">Choose your type of corgi </option>
+    <option value="">Now Choose Your Type of Corgi </option>
     <option value="1">Cardigan Welsh Corgi</option>
     <option value="2">Pembroke Welsh Corgi</option>
     <option value="3">Any type is perfect</option>
   </select>
+  <h3 class="labthree"></h3>
+  <button class="buttons" onclick="sayHello()">Choose Name</button>
+  <p class="dogg">Your chosen name is: <span id="student"></span></p>
   <h2 class="breed" id="Vaccinationcalendar"><b>VACCINATION CALENDAR</b></h2>
+  <div style="text-align: center;">
+    <button class="buttons" onclick="firstFunction()">Vaccination Guide</button>
+  <button class="buttons" onclick="secondFunction()">Close Vaccination Guide</button>
+  </div>
+
   <table class="vaccination" style="width:42%">
     <tr>
       <th>2-week old</th>
@@ -83,11 +95,13 @@
   </table>
   <h4 class="discount">The discount is valid till<time datetime="2023-03-8 23:59"> 8 march</time></h4>
   <blockquote>
-    <p class="quote"><i>It is amazing how much love and laughter they bring into our lives and even how much closer we
+    <p class="quoteanimation"><i>It is amazing how much love and laughter they bring into our lives and even how much closer we
         become with each other because of them. – John Grogan</i></p>
     <blockquote>
       <div class="heart-shape"></div>
       <h5 class="animation">Corgis are the best dogs ever!</h5>
+
+      <script src="index.js"></script>
 </body>
 
 </html>
