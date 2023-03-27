@@ -132,14 +132,98 @@ function checkNumbers() {
     // Отримуємо значення з полів введення
     const input3 = document.getElementById("input3").value;
     const input4 = document.getElementById("input4").value;
-  
     // Розділяємо рядки на масиви за допомогою коми та видаляємо зайві пробіли
     const array3 = input3.split(",").map((item) => item.trim());
     const array4 = input4.split(",").map((item) => item.trim());
-  
     // Об'єднуємо масиви та видаляємо повторювані значення
     const mergedArray = [...new Set([...array3, ...array4])];
-  
     // Виводимо результат у абзац з id="result"
     document.getElementById("result").innerHTML = mergedArray.join(", ");
   }
+
+    //TASK 21
+  function processInput() {
+    const input = document.getElementById("inputField").value;
+    const values = input.split(",").map(Number);
+    if (values.length % 2 !== 0) {
+      alert("Помилка: Кількість чисел має бути парним числом");
+      return;
+    }
+    const numRows = values.length / 2;
+    let count = 0;
+    const table = document.getElementById("myTable");
+    for (let i = 0; i < numRows; i++) {
+      const row = table.insertRow();
+      for (let j = 0; j < 2; j++) {
+        const cell = row.insertCell();
+        cell.innerHTML = values[count];
+        count++;
+      }
+    }
+  }
+
+
+    //TASK 26
+function getInputArray() {  // Функція для формування масиву з введених даних
+    const input = document.getElementById("input5").value;
+    const inputArray = input.split(",").map(item => item.trim());
+    return inputArray;
+  }
+  // Функція для виводу результату у абзац
+  function setResult(result) {
+    const output = document.getElementById("result26");
+    output.textContent = result;
+  }
+  // Функція для виводу результату першої функції у абзац
+  function setFirstResult(result) {
+    const output = document.getElementById("firstResult");
+    output.textContent = result;
+  }
+  // Функція, яка повертає перших n елементів масиву
+  function getFirst(array, n) {
+    if (n < 0) {
+      n = array.length + n;
+    }
+    return array.slice(0, n);
+  }
+  // Функція, яка формує масив з введених даних та викликає getFirst
+  function getFirstResult() {
+    const inputArray = getInputArray();
+    const n = document.getElementById("n").value;
+    const result = getFirst(inputArray, n);
+    setFirstResult(result);
+  }
+  // Функція, яка формує масив з введених даних та викликає getFirst
+  function getResult() {
+    const inputArray = getInputArray();
+    const result = inputArray;
+    setResult(result);
+  }
+
+    //TASK 29
+    function countRepeatingElements() {
+        // отримуємо введений рядок значень
+        const input = document.getElementById('input7').value;
+        // розділяємо значення по комі
+        const values = input.split(',');
+        // створюємо об'єкт-лічильник для підрахунку кількості повторювальних елементів
+        const count = {};
+        // перебираємо кожне значення та збільшуємо відповідний лічильник
+        values.forEach(value => {
+         if (count[value]) {
+          count[value]++;
+         } else {
+          count[value] = 1;
+         }
+        });
+        // підраховуємо кількість повторювальних елементів
+        let repeatingCount = 0;
+        for (const value in count) {
+         if (count[value] > 1) {
+          repeatingCount++;
+         }
+        }
+        // виводимо результат у повідомленні
+        const output = document.getElementById('output');
+        output.textContent = 'There are ${repeatingCount} repeating elements.';
+       }

@@ -250,12 +250,50 @@ hr{
 .myarray{
     font-family: 'Golos Text', sans-serif;
     color: darkred;
+}
 .nicebutton{
     background-color: rgba(199, 109, 6, 0.541);
     border-color: #862904;
     border-radius: 30px;
 }
-
-.nicebutton{
-    
+input {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.ptaskk{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.wowbutton{
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.topclass{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.woowbutton{
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.woowlabel{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.nicediv{
+    margin-top:6%;
+}
+.niceediv {
+    margin-top:6%;
+}
+th{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
 }
