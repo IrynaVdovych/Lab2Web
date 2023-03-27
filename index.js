@@ -82,22 +82,17 @@ btn.addEventListener("click", increment);
 
 
 //TASK 3 
-// Отримуємо елемент <img> зі сторінки
-const image = document.querySelector('img');
-
+const image = document.querySelector('img'); // Отримуємо елемент <img> зі сторінки
 // Створюємо масив з URL-адресами картинок
 const imageUrls = [
   'lovelyCorgi.jpg',
   'lovelyCorgiOne.jpg',
   'lovelyCorgiTwo.jpg'
 ];
-
 let index = 0; // Початковий індекс для масиву URL-адресів картинок
-
 setInterval(() => {
   index = (index + 1) % imageUrls.length; // Обчислюємо індекс наступної картинки
   const nextImageUrl = imageUrls[index];
-  
   // Створюємо новий об'єкт Image для наступної картинки
   const nextImage = new Image();
   nextImage.src = nextImageUrl;
@@ -110,3 +105,41 @@ setInterval(() => {
     }, 2000); // Тривалість анімації: 1 секунда
   };
 }, 2000); // Зміна картинки кожні 2 секунди
+
+
+
+
+//!LABORATOTY WORK 5!
+//TASK 1
+function checkNumbers() {
+    const input1 = document.getElementById("input1").value.trim();
+    const input2 = document.getElementById("input2").value.trim();
+    
+    // перетворення введеного рядка в масив чисел
+    const numbers1 = input1.split(" ").map(Number);
+    const numbers2 = input2.split(" ").map(Number);
+    
+    // перевірка, чи містяться числа з другого рядка в першому масиві чисел
+    const found = numbers2.some(number => numbers1.includes(number));
+    
+    // виведення результату
+    const resultElement = document.getElementById("demo");
+    resultElement.textContent = found ? "Так" : "Ні";
+  }
+
+  //TASK 30
+  function mergeArrays() {
+    // Отримуємо значення з полів введення
+    const input3 = document.getElementById("input3").value;
+    const input4 = document.getElementById("input4").value;
+  
+    // Розділяємо рядки на масиви за допомогою коми та видаляємо зайві пробіли
+    const array3 = input3.split(",").map((item) => item.trim());
+    const array4 = input4.split(",").map((item) => item.trim());
+  
+    // Об'єднуємо масиви та видаляємо повторювані значення
+    const mergedArray = [...new Set([...array3, ...array4])];
+  
+    // Виводимо результат у абзац з id="result"
+    document.getElementById("result").innerHTML = mergedArray.join(", ");
+  }

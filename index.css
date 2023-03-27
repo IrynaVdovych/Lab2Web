@@ -218,7 +218,44 @@ th {
 .ptaskFourth {
     font-family: 'Golos Text', sans-serif;
     color: darkred;
-    margin-top: 7%;
+    margin-top: 4%;
     padding-left: 7%;
     font-size: 210%;
+}
+.taskOneLabFive {
+    margin-top: 0.5%;
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.stringg{
+    margin-top: 5%;
+}
+hr{
+    border-top: 1px solid rgb(230, 144, 88);
+}
+.stringgs {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.ptask{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.arraysMy{
+    margin-top: 5%;
+}
+.myarray{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+.nicebutton{
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+
+.nicebutton{
+    
 }
