@@ -201,29 +201,63 @@ function getInputArray() {  // Функція для формування мас
   }
 
     //TASK 29
-    function countRepeatingElements() {
-        // отримуємо введений рядок значень
-        const input = document.getElementById('input7').value;
-        // розділяємо значення по комі
-        const values = input.split(',');
-        // створюємо об'єкт-лічильник для підрахунку кількості повторювальних елементів
-        const count = {};
-        // перебираємо кожне значення та збільшуємо відповідний лічильник
-        values.forEach(value => {
-         if (count[value]) {
-          count[value]++;
-         } else {
-          count[value] = 1;
-         }
-        });
-        // підраховуємо кількість повторювальних елементів
-        let repeatingCount = 0;
-        for (const value in count) {
-         if (count[value] > 1) {
-          repeatingCount++;
-         }
+     function countDuplicates() {
+      // Отримуємо введені дані з поля вводу
+      const input = document.getElementById("input7").value;
+      // Розділяємо введений рядок на масив за допомогою коми
+      const array = input.split(",");
+      // Створюємо об'єкт, який буде містити кількість повторюваних елементів
+      const counts = {};
+      // Проходимось по кожному елементу масиву і збільшуємо значення в об'єкті counts
+      array.forEach((element) => {
+        counts[element] = (counts[element] || 0) + 1;
+      });
+      // Лічильник повторюваних елементів
+      let count = 0;
+      // Проходимось по кожному елементу в об'єкті counts і збільшуємо лічильник, якщо значення > 1
+      for (const key in counts) {
+        if (counts.hasOwnProperty(key)) {
+          if (counts[key] > 1) {
+            count++;
+          }
         }
-        // виводимо результат у повідомленні
-        const output = document.getElementById('output');
-        output.textContent = 'There are ${repeatingCount} repeating elements.';
-       }
+      }
+      // Виводимо результат
+      alert(`Кількість повторювальних елементів: ${count}`);
+    }
+
+
+    //!LABORATOTY WORK 6!
+    //TASK 30
+    function checkTimeFormat() {
+      const input8 = document.getElementById("input8").value;
+      const pattern = /^([01][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$/;
+      if (pattern.test(input8)) {
+        alert("Time inputed in the right format HH:MM:SS");
+      } else {
+        alert("Time inputed in the wrong format");
+      }
+    }
+      //TASK 28
+      function checkDate() {
+        const input9 = document.getElementById("inputDate").value;
+        const regex = /^(0?[1-9]|[12][0-9]|3[01])\/(0?[1-9]|1[0-2])\/\d{4}$/;
+        
+        if (regex.test(input9)) {
+          const [day, month, year] = input9.split("/");
+          const dateObj = new Date(`${month}/${day}/${year}`);
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          const formattedDate = dateObj.toLocaleDateString('en-US', options);
+          document.getElementById("output3").innerHTML = `Valid date: ${formattedDate}`;
+        } else {
+          document.getElementById("output3").innerHTML = "Invalid date format!";
+        }
+      }
+      //TASK 21
+      function replaceString() {
+        const input10 = document.getElementById('input10').value;
+        const pattern1 = /aaa/;
+        const result4 = input10.replace(pattern1, '!');
+        document.getElementById('result4').innerHTML = result4;
+      }
+    

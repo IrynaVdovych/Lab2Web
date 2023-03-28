@@ -297,3 +297,62 @@ th{
     font-family: 'Golos Text', sans-serif;
     color: darkred;
 }
+.cooldiv{
+    margin-top:6%;
+    margin-bottom:2%;
+}
+.wooowbutton{
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px; 
+}
+.wooowlabel {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.superlabel {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.superbutton {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px; 
+}
+.superdiv{
+    margin-top:6%;
+}
+.superrdiv{
+    margin-top:6%;
+}
+.superrbutton {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px; 
+}
+.superrlabel{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.superrp{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    text-decoration: underline;
+}
+.superrrdiv{
+    margin-top:6%;
+}
+.superrrlabel{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.superrrbutton {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px; 
+}
+.superrrp{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    text-decoration: underline;
+}
