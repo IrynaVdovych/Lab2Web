@@ -356,3 +356,37 @@ th{
     color: darkred;
     text-decoration: underline;
 }
+.amazzdiv {
+    margin-top:6%;
+}
+.amazzbut{
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.amazzp{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    text-decoration: underline;
+}
+.amazzlab{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.amazdiv {
+    margin-top:6%;
+}
+.amazbut{
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.amazp{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+    text-decoration: underline;
+}
+.amazlab{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
