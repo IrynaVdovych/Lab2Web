@@ -390,3 +390,64 @@ th{
     font-family: 'Golos Text', sans-serif;
     color: darkred;
 }
+.stundiv {
+    margin-top:6%;
+}
+.stunlab {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.stunbut {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.stunndiv {
+    margin-top:6%;
+}
+.stunnbut {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+.stunnp{
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.stunnndiv {
+    margin-top:6%;
+}
+.stunnnlab {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.stunnnp {
+    font-family: 'Golos Text', sans-serif;
+    color: darkred;
+}
+.stunnnbut {
+    background-color: rgba(199, 109, 6, 0.541);
+    border-color: #862904;
+    border-radius: 30px;
+}
+
+.taskFirstlabEight {
+    display: block;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    font-family: 'Golos Text', sans-serif;
+    
+    text-decoration: none;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 25px;
+    background-color: rgb(241, 134, 62);
+    border-color: #ffc77d;
+    border-width: 2px;
+    border-radius: 27px;
+    border-style: solid;
+  }
+  
+  .taskFirstlabEight:hover {
+    background-color: darkred;
+  }

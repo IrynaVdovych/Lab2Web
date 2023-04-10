@@ -293,3 +293,49 @@ function findWords() {
   const outputt = document.getElementById("outputt");
   outputt.innerText = matches.join("\n");
   }
+
+
+
+//!LABORATOTY WORK 7!
+//TASK 1
+  function capitalize() {
+    let str = document.getElementById("text20").value;
+    let words = str.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+    document.getElementById("result21").value = words.join(" ");
+  }
+  
+  function toggleCase() {
+    let str = document.getElementById("text20").value;
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+      let c = str.charAt(i);
+      if (i % 2 == 0) {
+        result += c.toUpperCase();
+      } else {
+        result += c.toLowerCase();
+      }
+    }
+    document.getElementById("result21").value = result;
+  }
+
+  //TASK 2
+  function showDayOfWeek() {
+    const daysOfWeek = ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота'];
+    const date = new Date();
+    const dayOfWeek = daysOfWeek[date.getDay()];
+    const dayOfWeekElement = document.getElementById('day-of-week');
+    dayOfWeekElement.innerText = `Сьогодні ${dayOfWeek}`;
+  }
+
+    //TASK 3
+    function calculateSquareRoot() {
+      const number = document.getElementById("number22").value; // отримати значення з текстового поля
+      const randomNum = Math.floor(Math.random() * 99) + 1;       // згенерувати випадкове число від 1 до 99
+      const sum = parseInt(number) + randomNum;      // обчислити суму введеного числа і випадкового числа
+      const squareRoot = Math.sqrt(sum);   // вирахувати квадратний корінь з суми
+      document.getElementById("result22").innerHTML = `Квадратний корінь з суми чисел ${number} та ${randomNum} дорівнює ${squareRoot}.`;
+    }
+
