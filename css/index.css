@@ -432,22 +432,22 @@ th{
 }
 
 .taskFirstlabEight {
+    margin-top:5%;
+    margin-left: 470px;
+    margin-right: 470px;
     display: block;
     box-sizing: border-box;
-    padding: 20px 50px;
-    font-family: 'Golos Text', sans-serif;
-    
-    text-decoration: none;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 25px;
+    padding: 15px 15px;
+    font-family: 'Golos Text', sans-serif; 
+    color:rgb(82, 37, 11);
+    text-align: center;
     background-color: rgb(241, 134, 62);
-    border-color: #ffc77d;
+    border-color: #5e2503;
     border-width: 2px;
-    border-radius: 27px;
+    border-radius: 40px;
     border-style: solid;
   }
   
   .taskFirstlabEight:hover {
-    background-color: darkred;
+    background-color: rgba(209, 92, 45, 0.74);
   }
